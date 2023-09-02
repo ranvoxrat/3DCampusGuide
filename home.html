@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulsu SC-3D</title>
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/home.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="content1">
+                
+                <!-- <img src="assets/images/bulsu-logo.png" id="logo" /> -->
+
+                <div id="brand">
+                    <i class="fa-solid fa-bars" id="menui" onclick="hidemenu()"></i>
+                    <a class="navbar-brand" href="#">Bulacan State University</a>
+                    <h4 class="text2">Sarmiento Campus</h4>
+                </div>
+                <!-- <img src="assets/images/logo.png" id="logo1" /> -->
+            </div>
+        </header>
+        <div class="mobilenav">
+            <img src="assets/images/ham.png" id="hami" onclick="openmenu()" style="width: 3em" /><img
+                src="assets/images/sear.png" id="seari" />
+        </div>
+
+        <!-- <ul class="mobnav-menuc" id="mobmenu">
+            <li class="mobnav-item"><a href="#">Home</a></li>
+            <li class="mobnav-item"><a href="#">About us</a></li>
+        </ul> -->
+
+        <div id="panowrap">
+            <div id="panorama">
+                <img src="assets/images/3dLogo.png" id="logo"alt="" srcset="">
+                <!-- <input type="text" placeholder="Search"> -->
+                <img id="minimap" src="assets/images/waiting_area2.png" />
+                <!-- Start Menu -->
+                <ul class="panamenu" id="panomenu">
+                    <li class="buildings">
+                        <ul class="floor" id="buila">
+                            <li onclick="bmenu(buildmenua,dropicona)">
+                                <i class="fa-solid fa-building"></i>
+                                <b>Building A</b>
+                                <i class="fa-solid fa-arrow-down-long"></i>
+                            <li onclick="roomop()">
+                                1st Floor <img src="caret-down.png" class="dropir" />
+                                <ul class="room" id="af1">
+                                    <li onclick="roomclick()">Room 103</li>
+                                    <li>Room 104</li>
+                                    <li>Room 105</li>
+                                </ul>
+                            </li>
+                            <li>2nd Floor</li>
+                            <li>3rd Floor</li>
+                    </li>
+                </ul>
+                <!-- <ul class="panamenu" id="panomenu">
+                    <li class="buildings">
+                        <ul class="floor" id="buila">
+                            <li onclick="bmenu(buildmenua,dropicona)">
+                                <i class="fa-solid fa-building"></i>
+                                <b>Building A</b>
+                                <img src="caret-down.png" class="dropi" id="dropa" />
+                            <li onclick="roomop()">
+                                1st Floor <img src="caret-down.png" class="dropir" />
+                                <ul class="room" id="af1">
+                                    <li onclick="roomclick()">Room 103</li>
+                                    <li>Room 104</li>
+                                    <li>Room 105</li>
+                                </ul>
+                            </li>
+                            <li>2nd Floor</li>
+                            <li>3rd Floor</li>
+                    </li>
+                </ul>
+               
+                </li>
+                <li> <i class="fa-solid fa-building"></i> Building B</li>
+                <li><i class="fa-solid fa-building-circle-arrow-right"></i>Building C</li>
+                <li>Building D</li>
+                <li>Building E</li>
+                <ul class="floor" id="builg">
+                    <li onclick="bmenu(buildmenug,dropicong)">
+                        <b>Grounds</b><img src="caret-down.png" class="dropi" id="dropg" />
+                    <li>Gate</li>
+                    <li onclick="roomclick('buildinga')">Building A</li>
+                    <li>Building B</li>
+                    <li>Building C</li>
+                    <li>Building D</li>
+                    <li>Building E</li>
+                    </li>
+                </ul>
+
+
+                </ul> -->
+                <!-- end -->
+            </div>
+        </div>
+        <!-- <footer>
+            <div class="fcontainer">
+                <p>Copyright © 2023</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer> -->
+    </div>
+
+    <script src="assets/home.js"></script>
+    <script src="assets/function.js"></script>
+</body>
+
+</html>

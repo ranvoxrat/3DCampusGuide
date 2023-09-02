@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=B612&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,800&display=swap');
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+@font-face {
+  font-family: "latoblack";
+  src: url("Latovscode-file://vscode-app/c:/Users/DA/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html/lato-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 5vw;
+}
+.navbar-brand {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  justify-items: flex-start;
+  text-align: center;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 9vh;
+
+  width: 15vw;
+}
+
+.navbar-item {
+  text-align: center;
+
+  overflow: hidden;
+  margin: 0%;
+  padding-top: 11%;
+  width: 10vw;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10%;
+  border-radius: 3em;
+}
+
+.navbar-item a:hover {
+  background-color: #ffc300;
+  transition: 0.5s;
+}
+
+#brand {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 17em;
+  justify-content:center;
+}
+
+.pnlm-controls-container{
+  width: auto;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  left: -2rem;
+  top: 13rem;
+}
+/* Style for the logo */
+#panorama {
+  width: 100vw;
+  height: 100vh;
+  image-resolution: 20000px;
+}
+
+#panowrap {
+  display: flex;
+  flex-direction: column;
+}
+
+#minimap {
+  position: absolute;
+  top: 5vh;
+  width: 25vh;
+  opacity: 75%;
+  left: 85vw;
+  z-index: 1;
+}
+
+footer {
+  background-color: #040303;
+  color: white;
+  font-size: 1em;
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  display: flex;
+}
+
+.fcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#logo {
+  position: relative;
+  z-index: 12;
+  left: 12px;
+  top:3.0rem;
+  float: right;
+  width: 8rem;
+  image-resolution: 300dpi;
+  opacity: 10px;
+}
+
+.mobilenav {
+  display: none;
+}
+
+.mobnav-menuc {
+  display: none;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  justify-content: space-around;
+  height: 38vh;
+  margin-left: 10em;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  background-image: url("bg1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 95%;
+}
+
+.info a {
+  background-color: maroon;
+  padding: 1em;
+  border-radius: 3em;
+  color: white;
+}
+
+.info p {
+  margin-top: 1.5em;
+}
+
+#cur {
+  background-color: #ffc300;
+}
+
+.panamenu {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  height: 100%;
+  justify-content: start;
+  background-color:var(--bs-danger);
+  color:var(--bs-white);
+  transition: 0.5s;
+  z-index: -1;
+}
+.panamenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.panamenu ul li {
+  display: inline-block;
+  margin: 1em;
+  font-family: "Poppins", sans-serif;
+  padding: 4px;
+}
+
+.panamenu ul li a {
+  color:var(--bs-white);
+  text-decoration: none;
+}
+.panamenu ul li:hover{
+  background-color: var(--bs-indigo);
+}
+.panamenu.clo {
+  z-index: 2;
+  opacity: 1;
+  transition: 1s;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 1s;
+  height: 0;
+}
+
+.room.open {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 1s;
+  height: 20vh;
+  z-index: 100;
+  border: 2px solid black;
+}
+
+.buildings {
+  margin: 0;
+}
+
+.floor {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 5vh;
+  transition: all 1s;
+}
+
+.floor.open {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 38vh;
+  background-color: #ffc300;
+  transition: all 1s;
+  color: #040303;
+}
+
+.dropi {
+  width: 0;
+  margin-left: 0;
+  transform: rotate(90deg);
+  transition: 1s;
+}
+
+.dropi.op {
+  width: 0.6vw;
+  margin-left: 0.5vw;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.dropir {
+  width: 0.6vw;
+  margin-left: 0.5vw;
+  transform: rotate(90deg);
+  transition: 1s;
+}
+
+.dropir.op {
+  width: 0.6vw;
+  margin-left: 0.5vw;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.panamenu li {
+  text-align: center;
+}
+
+#menui {
+  width: 1.3vw;
+  position: absolute;
+  z-index: 100;
+  top: 4vh;
+  left: 0.7vw;
+  color: var(--bs-white);
+}
+
+input {
+  width: 20em;
+  height: 3em;
+  position: absolute;
+  z-index: 100;
+  left: 5em;
+  top: 0.5em;
+}
