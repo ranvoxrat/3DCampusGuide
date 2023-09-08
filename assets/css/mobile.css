@@ -1,0 +1,28 @@
+
+@media  screen and (max-width:375px) {
+    .page-title{
+        font-size: 14px;
+        font-weight: 900;
+    }
+    .mainContent{
+        position: relative;
+        display: block;
+        clear: both;
+        content: '';
+        width: auto;
+    }
+    .mainContent>.groupInput {
+       padding: 0;
+       margin: 0;
+    }
+    .mainContent .groupInput>.infoAccount{
+        position: relative;
+        display: block;
+        padding: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    .leftside{
+        display: none;
+    }
+}
