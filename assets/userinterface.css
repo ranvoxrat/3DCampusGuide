@@ -30,6 +30,7 @@
 * {
     padding: 0;
     margin: 0;
+    /* color: #040303; */
     box-sizing: border-box;
    
   }
@@ -53,9 +54,15 @@
     grid-area: menu;
     padding-bottom: 3em;
     overflow: auto;
-    background: var(--bs-danger);
+  
     margin: 0;
     border-right: 1px solid #ede8f0;
+  }
+  .menu-wrap>h2{
+    font-weight: 800;
+    font-size: 16px;
+    color: rgb(233, 33, 19);
+    margin-left: 2%;
   }
 .bld{
   padding: 2px;
@@ -508,4 +515,92 @@ height: 20rem;
 
 .panamenu li {
   text-align: center;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  color: #040303;
+  position: relative;
+  height:auto;
+  width: auto;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+}
+.sidenav>h2{
+  font-weight: 800;
+  font-size: 16px;
+  color: rgb(233, 33, 19);
+  margin-left: 2%;
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  font-family:"Poppins";
+  font-weight: 300;
+  padding: 6px 8px 6px 3rem;
+  text-decoration: none;
+  font-size: 15px;
+  color: #000000;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #d63333;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-image: linear-gradient(to right,rgb(216, 42, 42),rgb(231, 95, 16));
+  color: rgb(255, 255, 255);
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #faaaaacc;
+
+  padding-left:4rem ;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.btn-back{
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  color:white;
+  background-image: linear-gradient(to right,rgb(253, 39, 39),rgb(231, 79, 41));
+  border: none;
+  padding:10px;
+  text-align: center;
+  width: 100%;
+  margin-top: 10%;
+}
+.btn-back:hover{
+  transition: all;
+  background-image: linear-gradient(to right,rgb(240, 13, 13),rgb(238, 160, 44));
 }
